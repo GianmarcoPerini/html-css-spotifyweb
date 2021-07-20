@@ -9,27 +9,28 @@
     <script src="https://kit.fontawesome.com/be67ecee4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__list"><img nav__list__img src="img/logo.svg" alt=""></li>
-            <li class="nav__list">
-                <img class="nav__list__svg" src="img/svg/home.svg" alt="">
-                <p class="nav__list__prg__playlist--new">Home</p>
-            </li>
-            <li class="nav__list">
-                <img class="nav__list__svg" src="img/svg/search.svg" alt="">
-                <p class="nav__list__prg__playlist--new">Cerca</p>
-            </li>
-            <li class="nav__list">
-                <img class="nav__list__svg" src="img/svg/library.svg" alt="">
-                <p class="nav__list__prg__playlist--new">La tua libreria</p>
-            </li>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li class="nav__list nav__list--logo"><img nav__list__img src="img/logo.svg" alt=""></li>
+                <li class="nav__list">
+                    <img class="nav__list__svg" src="img/svg/home.svg" alt="">
+                    <p class="nav__list__prg">Home</p>
+                </li>
+                <li class="nav__list">
+                    <img class="nav__list__svg" src="img/svg/search.svg" alt="">
+                    <p class="nav__list__prg">Cerca</p>
+                </li>
+                <li class="nav__list">
+                    <img class="nav__list__svg" src="img/svg/library.svg" alt="">
+                    <p class="nav__list__prg">La tua libreria</p>
+                </li>
+            </ul>
             <ul class="nav__sublist">
                 <li class="nav__list"><h1>PLAYLIST</h1></li>
                 <li class="nav__list">
-                    <img class="nav__list__svg" src="img/svg/playlist.svg" alt="">
-                    <p class="nav__list__prg__playlist--new">Crea Playlist</p>
+                    <img class="nav__list__svg nav__list__svg--add" src="img/svg/playlist.svg" alt="">
+                    <p class="nav__list__prg">Crea Playlist</p>
                 </li>
                 <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
                 <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
@@ -47,22 +48,13 @@
                 <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
                 <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
             </ul>
-        </ul>
 
-        <div class="nav__user">
-            <p class="nav__user__prg"><i class="nav--icon far fa-arrow-alt-circle-down"></i> Install App</p>
-            <hr>
-            <h2 class="nav__user__prg"><i class="nav--icon fas fa-user-circle"></i> John Doe</h2>
-
-        </div>
-    </nav>
-
-    <header class="header">
-        <div class="button">Effettua l'upgrade</div>
-    </header>
-
-    
-    
-    
+            <div class="nav__user">
+                <p class="nav__user__prg"><i class="mrg1 far fa-arrow-alt-circle-down"></i> Installa app</p>
+                <hr>
+                <p class="nav__user__prg"><i class="mrg1 fas fa-user-circle"></i> John Doe</p>
+            </div>
+        </nav>
+    </div>
 </body>
 </html>
