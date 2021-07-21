@@ -12,52 +12,129 @@
     <div class="container">
         <nav class="nav">
             <ul>
-                <li class="nav__list nav__list--logo"><img nav__list__img src="img/logo.svg" alt=""></li>
-                <li class="nav__list">
+                <li class="nav__list__logo nav__logo--big"><img src="img/logo.svg" alt=""></li>
+                <li class="nav__list__logo nav__logo--small"><img src="img/logo-small.svg" alt=""></li>
+                <li class="nav__list nav__list--active">
                     <img class="nav__list__svg" src="img/svg/home.svg" alt="">
-                    <p class="nav__list__prg">Home</p>
+                    <p class="nav__prg__list">Home</p>
                 </li>
                 <li class="nav__list">
                     <img class="nav__list__svg" src="img/svg/search.svg" alt="">
-                    <p class="nav__list__prg">Cerca</p>
+                    <p class="nav__prg__list">Cerca</p>
                 </li>
                 <li class="nav__list">
                     <img class="nav__list__svg" src="img/svg/library.svg" alt="">
-                    <p class="nav__list__prg">La tua libreria</p>
+                    <p class="nav__prg__list">La tua libreria</p>
                 </li>
             </ul>
             <ul class="nav__sublist">
-                <li class="nav__list"><h1>PLAYLIST</h1></li>
-                <li class="nav__list">
+                <li class="nav__sub__list"><h2 class="nav--white">PLAYLIST</h2></li>
+                <li class="nav__sub__list">
                     <img class="nav__list__svg nav__list__svg--add" src="img/svg/playlist.svg" alt="">
-                    <p class="nav__list__prg">Crea Playlist</p>
+                    <p class="nav__prg__list">Crea Playlist</p>
                 </li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
-                <li class="nav__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
+                <li class="nav__sub__list"><p class="nav__prg__playlist">Nome Playlist</p></li>
             </ul>
             <div class="nav__user">
-                <p class="nav__user__prg"><i class="mrg1 far fa-arrow-alt-circle-down"></i> Installa app</p>
-                <hr>
-                <p class="nav__user__prg"><i class="mrg1 fas fa-user-circle"></i> John Doe</p>
+                <div class="user-box">
+                    <div class="nav__user__prg">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <p>Installa App</p>
+                    </div>
+                    <hr>
+                    <div class="nav__user__prg nav--white">
+                        <i class="fas fa-user-circle"></i> 
+                        <p class="nav--white">John Doe</p>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <main class="main">
             <div class="head">
                 <div class="btn">Effettua l'upgrade</div>
+            </div>
+            <div class="main__wrapper">
+                
+                <nav class="main__nav">
+                    <ul>
+                        <li class="main__nav__list main__list--active">IN EVIDENZA</li>
+                        <li class="main__nav__list">PODCAST</li>
+                        <li class="main__nav__list">CLASSIFICHE</li>
+                        <li class="main__nav__list">GENERI E MOOD</li>
+                        <li class="main__nav__list">NUOVE USCITE</li>
+                        <li class="main__nav__list">SCOPRI</li>
+                    </ul>
+                </nav>
+                <h1 class="main__titol nav--white">Recently Played</h1>
+                <div class="main__box">
+                    <div class="main__box__card">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <h3 class="card__titol nav--white">Heavy Metal</h3>
+                        <p class="card__prg">Subtitle</p>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/stranger.jpeg" alt="">
+                        <h3 class="card__titol nav--white">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                        <p class="card__prg">Kyle dixon & Michael Stein</p>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <h3 class="card__titol nav--white">A Quiet Place</h3>
+                        <p class="card__prg">Subtitle</p>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/split.jpeg" alt="">
+                        <h3 class="card__titol nav--white">Split</h3>
+                        <p class="card__prg">Subtitle</p>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/cure.jpeg" alt="">
+                        <h3 class="card__titol nav--white">A Cure For Welness</h3>
+                        <p class="card__prg">Subtitle</p>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/sinister.jpeg" alt="">
+                        <h3 class="card__titol nav--white">Sinister</h3>
+                        <p class="card__prg">Subtitle</p>
+                    </div>
+
+                </div>
+
+                <h1 class="main__titol nav--white">Creato per John Doe</h1>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+
+                <div class="main__box">
+                    <div class="main__box__card">
+                        <img src="img/radar.jpeg" alt="">
+                        <h3 class="card__titol nav--white nav--white">Release Radar</h3>
+                    </div>
+
+                    <div class="main__box__card">
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <h3 class="card__titol nav--white">Daily Mix 1</h3>
+                    </div>
+                </div>
+
             </div>
         </main>
 
