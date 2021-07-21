@@ -12,7 +12,8 @@
     --logo-bg: #080b12;
     --hover: #adff2f;
     --secondary-color: #a8acb3;
-    --music-bars: #c1c1c1;
+    --bars1: #c1c1c1;
+    --bars2: #5a5a5a;
     --bg-third: #141922;
 }
 
@@ -29,6 +30,8 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
     /* LOGO SIDE */
 
@@ -49,7 +52,7 @@ ul{
 
 .nav__sub__list{
     width: 90%;
-    margin: 15px auto;
+    margin: 10px auto;
     padding:0 20px;
 }
 
@@ -87,7 +90,7 @@ ul{
 }
 
 .nav__list__svg {
-    width: 30px;
+    width: 25px;
     aspect-ratio: 1/1;
     vertical-align: middle;
 }
@@ -107,7 +110,7 @@ ul{
 }
 
 .nav__prg__playlist{
-    margin: 25px 0;
+    margin: 15px 0;
 }
 
 .nav__user{
@@ -135,6 +138,10 @@ ul{
     font-size: 2em;
     vertical-align: middle
 }
+
+
+
+    /* MAIN */
 
 .main{
     width: calc(100% -  230px);
@@ -181,7 +188,8 @@ ul{
     margin: 5px 10px;
     font-weight: 600;
     position: relative;
-    padding: 10px
+    padding: 10px;
+    font-size: .85em;
 }
 
 .main__list--active::after {
@@ -236,7 +244,7 @@ ul{
 .layer{
     position: absolute;
     inset: 0 0 0 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(20, 25, 34, .6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,17 +252,18 @@ ul{
     opacity: 0;
 }
 
-
-
-
 .main__titol{
     margin: 40px 0 040px 0;
 }
 
+
+
+    /* FOOTER */
+
 .footer{
     height: 90px;
     width: 100%;
-    background-color: black;
+    background-color: var(--secondary-bg);
     display: flex;
     justify-content: space-between;
     font-size: .8rem
@@ -262,8 +271,8 @@ ul{
 
 .foot__brano,
 .foot__volume{
+    flex: 1 1 100px;
     height: 100%;
-    width: 25%;
     display: flex;
     align-items: center;
 }
@@ -293,9 +302,8 @@ ul{
     padding: 10px;
 }
 
-
 .foot__player{
-    width: 50%;
+    flex: 2 1 100px;
     /* background-color: yellow; */
     display: flex;
     flex-direction: column;
@@ -309,20 +317,19 @@ ul{
     /* background-color: blue; */
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .short{
-    width: 50%;
-    align-items: flex-start;
-    /* background-color: yellow; */
+    width: 40%;
+    justify-content: center;
     align-items: center;
 }
 
 .progress__bar{
-    width: 40%;
+    width: 25%;
     height: 5px;
-    background-color: green;
+    background-color: var(--bars1);
     border-radius: 10px;
     margin: 0 15px;
     position: relative;
@@ -339,12 +346,12 @@ ul{
     left: 0;
     width: 30%;
     height: 5px;
-    background-color: white;
+    background-color: var(--bars2);
     border-radius: 10px;
 }
 
 .foot__player__section .fas{
-    font-size: 20px;
+    font-size: 17px;
     padding: 5px;
     color: white
 }
@@ -352,6 +359,7 @@ ul{
 .foot__player__section .far{
     font-size: 30px;
     color: white;
+    padding: 10px
 }
 
 .foot__volume{
@@ -362,9 +370,43 @@ ul{
     padding: 10px;
 }
 
-.main__nav > ul{
-    margin-bottom: 50px;
+.box__vertical{
+    position: relative;
 }
+
+.vertical__volume{
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    width: 5px;
+    height: 100px;
+    background-color: var(--bars1);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.vertical__volume::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    width: 5px;
+    height: 30px;
+    background-color: var(--bars2);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+    /* SPECIFICITY */
 
 .nav__user__prg > p{
     display: inline-block;
@@ -378,6 +420,11 @@ ul{
 .layer .far{
     color: white
 }
+
+
+
+
+
 
 
     /* HOVER */
@@ -408,6 +455,7 @@ ul{
 
 
 
+    /* MEDIA-QUERY */
 
 @media screen and (max-width: 1000px){
     .main__box{
@@ -443,7 +491,12 @@ ul{
     .nav__prg__playlist,
     .nav__sub__list h2,
     .nav__sub__list,
-    .nav__user__prg > p{
+    .nav__user__prg > p,
+    .nav__logo--big,
+    .foot__volume > .progress__bar
+    /* .foot__txt, */
+    /* .foot__player p */
+    {
         display: none;
     }
 
@@ -473,10 +526,6 @@ ul{
         padding: 0
     }
 
-    .nav__logo--big{
-        display: none;
-    }
-
     .nav__logo--small{
         display: block;
         padding: 0
@@ -492,33 +541,20 @@ ul{
         width: 100%;
     }
 
-    .foot__volume > .progress__bar{
-        display: none;
-    }
-    .foot__txt{
-        display: none;
-    }
-
     .foot__icon{
         padding: 20px;
     }
 
-    .foot__player p{
-        display: none
+    .box__vertical:hover .vertical__volume{
+        opacity: 1
     }
+
 }
 
 
 
-/* 
-.foot__player{
-    background-color: rebeccapurple;
-}
 
-.foot__volume{
-    background-color: yellow;
-}
 
-.foot__brano{
-    background-color: aqua;
-} */
+
+
+
