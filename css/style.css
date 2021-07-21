@@ -270,7 +270,7 @@ ul{
     height: 60px;
     aspect-ratio: 1/1;
     background-color: yellow;
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
 .foot__img img{
@@ -278,12 +278,12 @@ ul{
 }
 
 .foot__txt{
-    margin-left: 10px
+    margin-left: 5%;
 }
 
 .foot__icon .icon{
     display: block;
-    margin: 15px 30px
+    margin: 15% 100%;
 }
 
 
@@ -291,7 +291,7 @@ ul{
 .foot__player{
     height: 100%;
     width: 50%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,10 +300,14 @@ ul{
 .foot__player__section{
     height: 49%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 }
 
-.volume__bar{
+.progress__bar{
     width: 150px;
     height: 5px;
     background-color: green;
@@ -312,12 +316,16 @@ ul{
     position: relative;
 }
 
-.volume__bar::after{
+.progress__bar--long{
+    width: 600px
+}
+
+.progress__bar::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px;
+    width: 30%;
     height: 5px;
     background-color: white;
     border-radius: 10px;
@@ -325,14 +333,14 @@ ul{
 
 
 .foot__volume :nth-child(1){
-    margin: 0 15px 0 auto;
+    margin: 0 5% 0 auto;
 }
 
 .foot__volume :nth-child(2){
-    margin: 0 15px;
+    margin: 0 5%;
 }
 .foot__volume :nth-child(3){
-    margin: 0 15px;
+    margin: 0 5%;
 }
 
 .main__nav > ul{
