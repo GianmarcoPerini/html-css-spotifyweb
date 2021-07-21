@@ -250,14 +250,90 @@ ul{
     margin: 40px 0 040px 0;
 }
 
-footer{
+.footer{
     height: 90px;
     width: 100%;
-    background-color: green;
+    background-color: black;
+    display: flex;
+}
+
+.foot__brano,
+.foot__volume{
+    height: 100%;
+    width: 25%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.foot__img{
+    height: 60px;
+    aspect-ratio: 1/1;
+    background-color: yellow;
+    margin-left: 10px;
+}
+
+.foot__img img{
+    width: 100%;
+}
+
+.foot__txt{
+    margin-left: 10px
+}
+
+.foot__icon .icon{
+    display: block;
+    margin: 15px 30px
 }
 
 
 
+.foot__player{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot__player__section{
+    height: 49%;
+    width: 100%;
+    background-color: blue;
+}
+
+.volume__bar{
+    width: 150px;
+    height: 5px;
+    background-color: green;
+    border-radius: 10px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.volume__bar::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.foot__volume :nth-child(1){
+    margin: 0 15px 0 auto;
+}
+
+.foot__volume :nth-child(2){
+    margin: 0 15px;
+}
+.foot__volume :nth-child(3){
+    margin: 0 15px;
+}
 
 .main__nav > ul{
     margin-bottom: 50px;
