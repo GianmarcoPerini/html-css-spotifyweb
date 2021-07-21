@@ -154,7 +154,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     background-color: var(--logo-bg);
-    padding: 20px 5px
+    padding: 20px 25px
 }
 
 .btn{
@@ -163,7 +163,8 @@ ul{
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid white;
+    color: white;
 }
 
 .main__nav{
@@ -226,6 +227,25 @@ ul{
     margin: 10px;
 }
 
+.card__img{
+    position: relative;
+    width: 100%;
+}
+
+.layer{
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    opacity: 0;
+}
+
+
+
+
 .main__titol{
     margin: 40px 0 040px 0;
 }
@@ -252,11 +272,30 @@ footer{
     margin-bottom: 60px
 }
 
+.layer .far{
+    color: white
+}
 
 
+    /* HOVER */
+
+    .btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+.nav__prg__list:hover,
+.nav__prg__playlist:hover,
+.main__nav__list:hover,
+.nav__user__prg > p:hover{
+    color: white;
+    cursor: pointer;
+}
 
 
-
+.card__img:hover .layer{
+    opacity: 1;
+}
 
 
 
