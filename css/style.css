@@ -17,6 +17,10 @@
     --bg-third: #141922;
 }
 
+a{
+    text-decoration: none
+}
+
 ul{
     list-style: none;
 }
@@ -293,9 +297,10 @@ ul{
     padding: 0 10px;
 }
 
-.foot__icon .icon{
+.icon{
     display: block;
     padding: 2px;
+    font-size: 1.2em
 }
 
 .foot__icon{
@@ -317,7 +322,7 @@ ul{
     /* background-color: blue; */
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .short{
@@ -350,20 +355,9 @@ ul{
     border-radius: 10px;
 }
 
-.foot__player__section .fas{
-    font-size: 17px;
-    padding: 5px;
-    color: white
-}
-
-.foot__player__section .far{
-    font-size: 30px;
-    color: white;
-    padding: 10px
-}
-
 .foot__volume{
     justify-content: flex-end;
+    position: relative;
 }
 
 .foot__volume .fas{
@@ -385,17 +379,45 @@ ul{
     transform: translateX(-50%);
     border-radius: 10px;
     opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .vertical__volume::after{
     content: "";
     position: absolute;
     bottom: 0;
-    /* left: 0; */
     width: 5px;
     height: 30px;
     background-color: var(--bars2);
     border-radius: 10px;
+}
+
+.vertical__progress__bar__hover{
+    width: 5px;
+    height: 40px;
+    background-color: rgb(100, 211, 100);
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+}
+
+
+
+
+.progress__bar__hover{
+    width: 30%;
+    height: 5px;
+    background-color: rgb(100, 211, 100);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0;
 }
 
 
@@ -421,8 +443,25 @@ ul{
     color: white
 }
 
+.progress__bar__hover .fas{
+    position: absolute;
+    right: -10px;
+}
 
+.vertical__progress__bar__hover .fas{
+    position: absolute;
+    top: -10px
+}
 
+.foot__player__section .fas{
+    font-size: 17px;
+    padding: 5px;
+}
+
+.foot__player__section .far{
+    font-size: 30px;
+    padding: 10px
+}
 
 
 
@@ -447,12 +486,38 @@ ul{
     opacity: 1;
 }
 
+.foot__player .far:hover{
+    transform: scale(1.2);
+}
 
+.progress__bar:hover .progress__bar__hover {
+    opacity: 1;
+}
 
+.progress__bar:hover::after{
+    display: none;
+}
 
+/* .vertical__volume:hover .progress__bar__hover{
+    opacity: 1;
+} */
 
+.vertical__volume:hover .vertical__progress__bar__hover{
+    opacity: 1;
+}
 
+.vertical__volume:hover::after{
+    display: none;
+}
 
+a:hover{
+    text-decoration: underline;
+}
+
+.icon:hover{
+    color: white;
+    cursor: pointer;
+}
 
 
     /* MEDIA-QUERY */
@@ -493,8 +558,8 @@ ul{
     .nav__sub__list,
     .nav__user__prg > p,
     .nav__logo--big,
-    .foot__volume > .progress__bar
-    /* .foot__txt, */
+    .foot__volume > .progress__bar,
+    .foot__txt
     /* .foot__player p */
     {
         display: none;
