@@ -190,7 +190,7 @@ ul{
     font-weight: 600;
     position: relative;
     padding: 10px;
-    font-size: .85em;
+    font-size: 1.2em;
 }
 
 .main__list--active::after {
