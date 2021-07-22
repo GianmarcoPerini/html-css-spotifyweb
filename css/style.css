@@ -76,6 +76,7 @@ ul{
     height: 100%;
     background-color: var(--hover)
 }
+
 .nav__list__logo{
     width: 100%;
 }
@@ -119,7 +120,6 @@ ul{
 
 .nav__user{
     width: 100%;
-    /* height: 100px; */
     background-color: black;
     position: absolute;
     bottom: 0;
@@ -158,7 +158,6 @@ ul{
     height: calc(100% - 82px);
     overflow-y: auto;
     padding: 20px;
-    /* margin-left: 10px; */
 }
 
 .head{
@@ -185,8 +184,6 @@ ul{
     text-align: center;
 }
 
-
-
 .main__nav__list{
     display: inline-block;
     margin: 5px 10px;
@@ -209,16 +206,13 @@ ul{
 
 .main__box{
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: nowrap;
     width: 100%;
-    /* background-color: red; */
 }
 
 .main__box__card{
     width: calc(95% / 6);
     margin-right: 10px;
-    /* background-color: yellow; */
 }
 
 .main__box__card--round img{
@@ -285,7 +279,6 @@ ul{
     width: 15%;
     min-width: 50px;
     aspect-ratio: 1/1;
-    /* background-color: yellow; */
     padding-left: 10px;
 }
 
@@ -309,7 +302,6 @@ ul{
 
 .foot__player{
     flex: 2 1 100px;
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -319,7 +311,6 @@ ul{
 .foot__player__section{
     height: 49%;
     width: 100%;
-    /* background-color: blue; */
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -406,9 +397,6 @@ ul{
     opacity: 0;
 }
 
-
-
-
 .progress__bar__hover{
     width: 30%;
     height: 5px;
@@ -419,12 +407,6 @@ ul{
     position: relative;
     opacity: 0;
 }
-
-
-
-
-
-
 
 
 
@@ -465,48 +447,34 @@ ul{
 
 
 
-
     /* HOVER */
 
-    .btn:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-    }
+.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .nav__prg__list:hover,
 .nav__prg__playlist:hover,
 .main__nav__list:hover,
-.nav__user__prg > p:hover{
+.nav__user__prg > p:hover,
+.icon:hover{
     color: white;
     cursor: pointer;
-}
-
-
-.card__img:hover .layer{
-    opacity: 1;
 }
 
 .foot__player .far:hover{
     transform: scale(1.2);
 }
 
-.progress__bar:hover .progress__bar__hover {
+.progress__bar:hover .progress__bar__hover,
+.vertical__volume:hover .vertical__progress__bar__hover,
+.card__img:hover .layer{
     opacity: 1;
 }
 
+.vertical__volume:hover::after,
 .progress__bar:hover::after{
-    display: none;
-}
-
-/* .vertical__volume:hover .progress__bar__hover{
-    opacity: 1;
-} */
-
-.vertical__volume:hover .vertical__progress__bar__hover{
-    opacity: 1;
-}
-
-.vertical__volume:hover::after{
     display: none;
 }
 
@@ -514,10 +482,6 @@ a:hover{
     text-decoration: underline;
 }
 
-.icon:hover{
-    color: white;
-    cursor: pointer;
-}
 
 
     /* MEDIA-QUERY */
@@ -559,9 +523,7 @@ a:hover{
     .nav__user__prg > p,
     .nav__logo--big,
     .foot__volume > .progress__bar,
-    .foot__txt
-    /* .foot__player p */
-    {
+    .foot__txt{
         display: none;
     }
 
@@ -573,22 +535,18 @@ a:hover{
         width: 50px;
     }
 
+    .nav__sub__list,
     .nav__sub__list{
         margin: 15px 0;
     }
 
     .nav__list{
         padding: 0;
-        /* margin: 0 */
     }
 
     .nav__list__svg{
         display: block;
         margin: 0 auto;
-    }
-
-    .nav__sub__list{
-        padding: 0
     }
 
     .nav__logo--small{
@@ -613,13 +571,4 @@ a:hover{
     .box__vertical:hover .vertical__volume{
         opacity: 1
     }
-
 }
-
-
-
-
-
-
-
-
