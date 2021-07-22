@@ -522,8 +522,7 @@ a:hover{
     .nav__sub__list,
     .nav__user__prg > p,
     .nav__logo--big,
-    .foot__volume > .progress__bar,
-    .foot__txt{
+    .foot__volume > .progress__bar{
         display: none;
     }
 
@@ -570,5 +569,11 @@ a:hover{
 
     .box__vertical:hover .vertical__volume{
         opacity: 1
+    }
+}
+
+@media screen and (max-width: 450px){
+    .foot__txt{
+        display: none;
     }
 }
